@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gambar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/txtPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Judul"
+                        android:textColor="#000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtJam"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="10dp"
+                        android:text="Judul"
+                        android:textColor="#686868"
+                        android:textSize="18dp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:id="@+id/txtJudul"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Judul"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="Judul"
+                android:textColor="#686868"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#A3A3A3"
+        android:padding="-10dp"></View>
+
+</LinearLayout>
